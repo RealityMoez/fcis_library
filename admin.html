@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FCIS Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="admin.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="admin_panel.js"></script>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="container">
+      <ul>
+        <li><a href="#">Admin</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="main.html">Home</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="adminlogin">
+    <form onsubmit="return validate();" action="admin_panel.html">
+      <div>
+        <legend>Administrator Login</legend><br><br>
+
+
+        <input type="text" id="uname" placeholder="username"><br>
+
+        <input type="password" id="pass" placeholder="password"><br>
+
+        <button type="submit" id="submit">Login</button>
+      </div>
+    </form>
+
+  </div>
+
+
+  <div class="footer">
+    <div class="container">
+      <p>&copy; Ain Shams University</p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

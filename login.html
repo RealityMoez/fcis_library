@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    FCIS Library
+  </title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <style>
+    html,
+    body,
+    #body-container {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url("image2.jpg") center center;
+      background-size: cover;
+    }
+
+    #body-container {
+      width: 100%;
+      height: 100vh;
+      padding-top: 12%;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #body-container .div {
+      padding-top: 8%;
+    }
+
+    .body {
+      border: solid 1px white;
+      margin: 0px 400px 30px 375px;
+      animation: drop 2s ease;
+    }
+
+    .marrgin {
+      margin: 0px 30px 50px 70px;
+    }
+
+    .back {
+      background: orange;
+    }
+
+    .white {
+      color: rgb(100%, 100%, 100%);
+      font-size: xx-large;
+    }
+
+    .white22 {
+      color: rgb(100%, 100%, 100%);
+      font-size: large;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 940px;
+      padding: 0 10px;
+      margin-right: 19%;
+    }
+
+    .nav {
+      background: #000;
+      height: 50px;
+      width: 100%;
+      scroll-behavior: smooth;
+      margin-top: -12%;
+    }
+
+    .nav ul {
+      height: 80px;
+      list-style: none;
+      margin: 0 -250px 0 0;
+      padding: 0;
+    }
+
+    .nav ul li a {
+      float: right;
+      color: #fff;
+      height: 50px;
+      line-height: 50px;
+      list-style: none;
+      padding: 0 20px;
+      transition: background .5s, color .5s;
+      text-decoration: none;
+    }
+
+    .nav ul li a:hover {
+      color: black;
+      background: lightblue;
+      cursor: pointer;
+    }
+
+    label {
+      color: white;
+    }
+
+    form,
+    input,
+    p,
+    label {
+      animation: drop 0.7s ease;
+    }
+
+    .submit-btn {
+      width: 37%;
+      transition: all 0.2s ease;
+      margin: auto;
+      margin-top: 1%;
+      margin-bottom: 2%;
+      background-color: black;
+      color: white;
+      padding: 1%;
+      border: 1px solid #fff;
+      opacity: 1;
+      animation: drop 1s ease;
+    }
+
+    .submit-btn:hover {
+      background: white;
+      color: black;
+      cursor: pointer;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    @keyframes drop {
+      0% {
+        opacity: 0;
+        transform: translateY(-80px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="body-container">
+
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="admin.html">Admin</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="main.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="div">
+      <p
+        style="display: flex; justify-content: center; background-color: transparent; width: 20vw; margin: auto; margin-bottom: 20px; margin-top: 20px;">
+        <mark
+          style="width: max-content; color: orange; font-size: xx-large; background-color: transparent; display: flex;">
+          Login <span style=" color: white; font-size: xx-large; margin-left: 6%;">In</span>
+        </mark>
+      </p>
+      <div class="marrgin">
+        <div class="body">
+          <form
+            style="width: 100%; background-color: transparent; margin: auto; display: flex; justify-content: center; flex-direction: column;">
+            <label style="margin: auto; color: white; margin-top: 2%; margin-bottom: 1%;">Email</label>
+            <input type="text" name="email" placeholder="Enter your email"
+              style="margin: auto; width: 36%; height: 3vh;">
+
+            <label style=" margin: auto; color: white; margin-top: 2%; margin-bottom: 1%;">Password</label>
+            <input type="text" name="password" placeholder="Enter your password"
+              style="margin: auto; width: 36%; height: 3vh;">
+
+            <div style="display: inline-flex;">
+              <div style="display: inline-flex; margin: auto;">
+                <input type="radio" name="remember" value="checked" style="margin: 8% auto 0 auto; margin-right: 4px;">
+                <label style="color: white; margin-top: 8%;">Remember Me</label>
+              </div>
+            </div>
+
+            <input type="submit" value="Submit" class="submit-btn">
+
+            <div style="display: inline-flex; margin: auto; margin-bottom: 5%;">
+              <input type="radio" name="terms" value="agreed">
+              <label style="color: white; display: inline-block; margin-right: 0px;">I Agree to Terms &
+                Conditions</label>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+body {
+	background-image:  none;
+
+	font-family: corbel;
+}
+a:hover {
+ color: red;
+}
+
+#submit:hover{
+	color:blue;
+}
