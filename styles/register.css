@@ -8,7 +8,7 @@ body
 
 body
 {
-    background: url("image.jpg") center center;
+    background: url(/public/register.jpg) center center;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
 }
