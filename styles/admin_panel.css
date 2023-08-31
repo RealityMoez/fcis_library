@@ -31,7 +31,7 @@ legend
 
 #adminsetting
 {
-  background: url(/public/admin_bg.jpg) center center;
+  background: url(/_public/admin_bg.jpg) center center;
   background-size: cover;
   height: 800px;
   margin-top: -16px;

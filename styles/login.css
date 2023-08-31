@@ -10,7 +10,7 @@ body,
 body
 {
     font-family: 'Poppins', sans-serif;
-    background: url(/public/login.jpg) center center;
+    background: url(/_public/login.jpg) center center;
     background-size: cover;
 }
 

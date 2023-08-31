@@ -33,8 +33,8 @@
       "dest": "/styles/$1.css"
     },
     {
-      "src": "/public/(.*)",
-      "dest": "/public/$1"
+      "src": "/_public/(.*)",
+      "dest": "/_public/$1"
     }
   ]
 }
