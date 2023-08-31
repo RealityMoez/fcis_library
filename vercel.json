@@ -31,10 +31,6 @@
     {
       "src": "/styles/(.*).css",
       "dest": "/styles/$1.css"
-    },
-    {
-      "src": "/_public/(.*)",
-      "dest": "/_public/$1"
     }
   ]
 }
