@@ -20,7 +20,7 @@ body
 
 .header
 {
-  background: url('public/main.jpg') no-repeat center center;
+  background: url(/public/main.jpg) no-repeat center center;
   background-size: cover;
   height: 800px;
   text-align: center;
