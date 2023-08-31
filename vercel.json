@@ -21,6 +21,10 @@
   ],
   "routes": [
     {
+      "src": "/",
+      "dest": "/main.html"
+    },
+    {
       "src": "/(.*).html",
       "dest": "/$1.html"
     },
