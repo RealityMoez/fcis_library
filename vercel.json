@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "fcis-library",
+    "builds": [
+      {
+        "src": "*.html",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*).html",
+        "dest": "/$1.html"
+      }
+    ]
+  }
