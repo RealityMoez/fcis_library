@@ -26,5 +26,19 @@
       "src": "**/*.jpeg",
       "use": "@vercel/static"
     }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/main.html"
+    },
+    {
+      "src": "/(.*).html",
+      "dest": "/$1.html"
+    },
+    {
+      "src": "/styles/(.*).css",
+      "dest": "/styles/$1.css"
+    }
   ]
 }
