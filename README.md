@@ -2,11 +2,15 @@
 
 FCIS Library is a user-friendly web application that allows users to browse and access books online. Featuring a navigation bar, a comprehensive book list, and purchase links for each book.
 
+---
+
 > ## Deployment
 
 Deploy the FCIS Library with Vercel:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/RealityMoez/fcis_library)
+
+---
 
 > ## Features
 
@@ -17,6 +21,8 @@ Deploy the FCIS Library with Vercel:
 - **Admin Login**: Exclusive features for administrators, implemented in `admin.html` and `admin_panel.html`.
 
 - **User Registration and Login**: User-specific features allowing registration and login, implemented in `register.html` and `login.html` respectively. (functionality not implemented)
+
+---
 
 > ## Code Structure
 
@@ -34,8 +40,12 @@ The codebase includes HTML, CSS, and JavaScript files:
 
 - `admin_panel.js`: Defines the functionality of the administrator panel.
 
-> ## Setup for Local Testing
+---
+
+> ## Testing locally
 
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
 3. Open `main.html` in your preferred web browser.
+
+---
