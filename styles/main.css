@@ -20,7 +20,7 @@ body
 
 .header
 {
-  background: url(main.jpg) no-repeat center center;
+  background: url(../public/main.jpg) no-repeat center center;
   background-size: cover;
   height: 800px;
   text-align: center;
@@ -160,7 +160,7 @@ body
   color: black;
   background: lightblue;
   cursor: pointer;
-  transition: all .3s;
+  transition: all .2s;
 }
 
 .main .container

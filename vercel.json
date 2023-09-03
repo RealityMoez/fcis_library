@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "public": false,
+  "public": true,
   "builds": [
     {
       "src": "main.html",
@@ -17,20 +17,14 @@
     {
       "src": "**/*.js",
       "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/main.html"
     },
     {
-      "src": "/(.*).html",
-      "dest": "/$1.html"
+      "src": "**/*.jpg",
+      "use": "@vercel/static"
     },
     {
-      "src": "/styles/(.*).css",
-      "dest": "/styles/$1.css"
+      "src": "**/*.jpeg",
+      "use": "@vercel/static"
     }
   ]
 }
