@@ -4,7 +4,7 @@ FCIS Library is a user-friendly web application that allows users to browse and 
 
 ---
 
-> ## Deployment
+### Deployment
 
 Deploy the FCIS Library with Vercel:
 
@@ -12,7 +12,7 @@ Deploy the FCIS Library with Vercel:
 
 ---
 
-> ## Features
+### Features
 
 - **Navigation Bar**: Facilitates swift navigation to Admin, Register, Login, and Home pages. Implemented within HTML files using the class "nav".
 
@@ -24,7 +24,7 @@ Deploy the FCIS Library with Vercel:
 
 ---
 
-> ## Code Structure
+### Code Structure
 
 The codebase includes HTML, CSS, and JavaScript files:
 
@@ -42,7 +42,7 @@ The codebase includes HTML, CSS, and JavaScript files:
 
 ---
 
-> ## Testing locally
+### Testing locally
 
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
