@@ -1,6 +1,6 @@
 # FCIS Library: Static 'Book Library' Template
 
-FCIS Library is a user-friendly web application that allows users to browse and access books online. Featuring a navigation bar, a comprehensive book list, and purchase links for each book.
+FCIS Library is a user-friendly web application that allows users to browse and access books online. Featuring a navigation bar, a comprehensive book list, and a purchase link for each book.
 
 ---
 
