@@ -46,6 +46,6 @@ The codebase includes HTML, CSS, and JavaScript files:
 
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
-3. Open `main.html` in your preferred web browser.
+3. Open `main.html` in your web browser.
 
 ---
