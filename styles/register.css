@@ -4,7 +4,7 @@ body,
 {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body
@@ -12,33 +12,39 @@ body
     font-family: 'Poppins', sans-serif;
     background: url(../public/register.jpg) center center;
     background-size: cover;
+    min-height: 100vh;
 }
 
 #body-container
 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 0;
     margin-bottom: 0px;
     background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
 }
 
 #body-container .div
 {
     padding-top: 1%;
+    width: 100%;
 }
 
 .body
 {
     border: solid 1px white;
-    margin: 0px 400px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
     animation: drop 2s ease;
 }
 
 .register-form
 {
-         /* t   r    b    l */
-    margin: auto auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .container
@@ -46,7 +52,6 @@ body
     margin: 0 auto;
     max-width: 940px;
     padding: 0 10px;
-    margin-right: 19%;
 }
 
 /* Old nav styles removed - using header.css now */
@@ -64,16 +69,28 @@ label
     animation: drop 0.7s ease;
 }
 
+form {
+    padding: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    margin: 8px auto;
+}
+
 .submit-btn
 {
-    width: 37%;
+    width: 100%;
+    max-width: 400px;
     transition: all 0.2s ease;
-    margin: auto;
-    margin-top: 1%;
-    margin-bottom: 2%;
+    margin: 15px auto;
     background-color: black;
     color: white;
-    padding: 1%;
+    padding: 10px;
     border: 1px solid #fff;
     opacity: 1;
     animation: drop 1s ease;
@@ -112,4 +129,77 @@ label
     top: 0;
     left: 0;
     right: 0;
+}
+
+/* Responsive title */
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.title-text {
+    color: orange;
+    font-size: 2.5rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.title-text span {
+    color: white;
+    margin-left: 10px;
+}
+
+/* Responsive form layout */
+.form-group {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.terms-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+/* Media queries for better responsiveness */
+@media (max-width: 768px) {
+    .body {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-text {
+        font-size: 2rem;
+    }
+    
+    .radio-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .radio-option {
+        margin: 5px 0;
+    }
 }

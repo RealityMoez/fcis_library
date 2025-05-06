@@ -36,50 +36,59 @@
 
   <div id="body-container">
     <div class="div">
-      <p style="display: flex; justify-content: center; background-color: transparent; width: 20vw; margin: auto; margin-bottom: 20px; margin-top: 20px;">
-        <mark style="width: max-content; color: orange; font-size: xx-large; background-color: transparent; display: flex;">
-          Register <span style=" color: white; font-size: xx-large; margin-left: 6%;">Now</span>
-        </mark>
-      </p>
+      <div class="title-container">
+        <div class="title-text">
+          Register <span>Now</span>
+        </div>
+      </div>
       <div class="register-form">
         <div class="body">
-          <form style="width: 100%; background-color: transparent; margin: auto; display: flex; justify-content: center; flex-direction: column;">
-
-            <label style="margin: auto; color: white; margin-top: 2%; margin-bottom: 1%;">Username</label>
-            <input type="text" name="username" placeholder="Enter your username" style="margin: auto; width: 36%; height: 3vh;">
+          <form>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" placeholder="Enter your username">
+            </div>
             
-            <label style="margin: auto; color: white; margin-top: 2%; margin-bottom: 1%;">Email</label>
-            <input type="email" name="email" placeholder="Enter your email" style="margin: auto; width: 36%; height: 3vh;">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
             
-            <label style="margin: auto; color: white; margin-top: 2%; margin-bottom: 1%;">Phone Number</label>
-            <input type="text" name="phone" placeholder="Enter your phone number" style="margin: auto; width: 36%; height: 3vh;">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+            </div>
             
-            <label style="margin: auto; color: white; margin-top: 2%; margin-bottom: 1%;">Password</label>
-            <input type="password" name="password" placeholder="Enter your password" style="margin: auto; width: 36%; height: 3vh;">
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
             
-            <label style="margin: auto; color: white; margin-top: 2%; margin-bottom: 1%;">Age Group</label>
-            <div style="display: flex; justify-content: center; margin: 10px 0;">
-              <div style="display: inline-flex; margin-right: 15px;">
-                <input type="radio" name="age" value="0-25" id="option-1" style="margin: auto 4px auto 0;">
-                <label for="option-1" style="color: white;">0-25</label>
-              </div>
-              
-              <div style="display: inline-flex; margin-right: 15px;">
-                <input type="radio" name="age" value="26-50" id="option-2" style="margin: auto 4px auto 0;">
-                <label for="option-2" style="color: white;">26-50</label>
-              </div>
-              
-              <div style="display: inline-flex;">
-                <input type="radio" name="age" value="51+" id="option-3" style="margin: auto 4px auto 0;">
-                <label for="option-3" style="color: white;">51+</label>
+            <div class="form-group">
+              <label>Age Group</label>
+              <div class="radio-group">
+                <div class="radio-option">
+                  <input type="radio" name="age" value="0-25" id="option-1">
+                  <label for="option-1">0-25</label>
+                </div>
+                
+                <div class="radio-option">
+                  <input type="radio" name="age" value="26-50" id="option-2">
+                  <label for="option-2">26-50</label>
+                </div>
+                
+                <div class="radio-option">
+                  <input type="radio" name="age" value="51+" id="option-3">
+                  <label for="option-3">51+</label>
+                </div>
               </div>
             </div>
             
             <input type="submit" value="Register" class="submit-btn">
             
-            <div style="display: inline-flex; margin: auto; margin-bottom: 5%;">
-              <input type="radio" name="terms" value="agreed">
-              <label style="color: white; display: inline-block; margin-right: 0px;">I Agree to Terms & Conditions</label>
+            <div class="terms-container">
+              <input type="checkbox" name="terms" id="terms" value="agreed">
+              <label for="terms">I Agree to Terms & Conditions</label>
             </div>
           </form>
         </div>

@@ -39,44 +39,38 @@
 
   <div id="body-container">
     <div class="div">
-      <p
-        style="display: flex; justify-content: center; background-color: transparent; width: 20vw; margin: auto; margin-bottom: 20px; margin-top: 20px;">
-        <mark
-          style="width: max-content; color: orange; font-size: xx-large; background-color: transparent; display: flex;">
-          Log<span style=" color: white; font-size: xx-large; margin-left: 6%;">In</span>
-        </mark>
-      </p>
+      <div class="title-container">
+        <div class="title-text">
+          Log<span>In</span>
+        </div>
+      </div>
       <div class="marrgin">
         <div class="body">
-          <form
-            style="width: 100%; background-color: transparent; margin: auto; display: flex; justify-content: center; flex-direction: column;">
-            <label style="margin: auto; color: white; margin-top: 2%; margin-bottom: 1%;">Email</label>
-            <input type="text" name="email" placeholder="Enter your email"
-              style="margin: auto; width: 36%; height: 3vh;">
+          <form>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
 
-            <label style=" margin: auto; color: white; margin-top: 2%; margin-bottom: 1%;">Password</label>
-            <input type="text" name="password" placeholder="Enter your password"
-              style="margin: auto; width: 36%; height: 3vh;">
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
 
-            <div style="display: inline-flex;">
-              <div style="display: inline-flex; margin: auto;">
-                <input type="radio" name="remember" value="checked" style="margin: 8% auto 0 auto; margin-right: 4px;">
-                <label style="color: white; margin-top: 8%;">Remember Me</label>
-              </div>
+            <div class="remember-container">
+              <input type="checkbox" id="remember" name="remember" value="checked">
+              <label for="remember">Remember Me</label>
             </div>
 
             <input type="submit" value="Submit" class="submit-btn">
 
-            <div style="display: inline-flex; margin: auto; margin-bottom: 5%;">
-              <input type="radio" name="terms" value="agreed">
-              <label style="color: white; display: inline-block; margin-right: 0px;">I Agree to Terms &
-                Conditions</label>
+            <div class="terms-container">
+              <input type="checkbox" id="terms" name="terms" value="agreed">
+              <label for="terms">I Agree to Terms & Conditions</label>
             </div>
-
           </form>
         </div>
       </div>
-
     </div>
   </div>
 
