@@ -1,0 +1,126 @@
+/* Mobile-responsive header styles */
+.header-nav {
+  background: #000;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+.header-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.logo span {
+  font-family: 'Lobster', cursive;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: black;
+  background: lightblue;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: #000;
+    width: 100%;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease-in;
+    z-index: 999;
+  }
+  
+  .nav-links.active {
+    transform: translateY(0);
+  }
+  
+  .nav-links li {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-links li a {
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+}
+
+/* Ensure header looks good on login and register pages with background images */
+.auth-page .header-nav {
+  background-color: rgba(0, 0, 0, 0.8);
+} 

@@ -7,20 +7,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link href="/styles/admin.css" type="text/css" rel="stylesheet">
+  <link href="styles/header.css" rel="stylesheet">
   <script type="text/javascript" src="admin_panel.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  <div class="nav">
-    <div class="container">
-      <ul>
-        <li><a href="#">Admin</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="login.html">Login</a></li>
+  <nav class="header-nav">
+    <div class="header-container">
+      <a href="main.html" class="logo">
+        <h1>FCIS <span>Library</span></h1>
+      </a>
+      
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links">
         <li><a href="main.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="admin.html">Admin</a></li>
       </ul>
     </div>
-  </div>
+  </nav>
 
   <div class="adminlogin">
     <form onsubmit="return validate();" action="admin_panel.html">
@@ -45,7 +58,7 @@
     </div>
   </div>
 
-
+  <script src="scripts/header.js"></script>
 </body>
 
 </html>
