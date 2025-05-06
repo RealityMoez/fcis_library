@@ -3,20 +3,43 @@ body
 {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body
 {
   font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+.adminlogin
+{
+  background: url(../public/admin_bg.jpg) center center;
+  background-size: cover;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2rem 0;
 }
 
 form
 {
-  width: 30%;
-  margin: 0 0 0 550px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
   animation: drop 0.75s ease;
 }
 
+.admin-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  width: 100%;
+}
 
 #adminsetting
 {
@@ -26,39 +49,33 @@ form
 legend
 {
   text-decoration: underline;
-  text-underline-offset: 15px;
+  text-underline-offset: 10px;
   font-family: 'Lobster', cursive;
   color: white;
   margin: auto;
   padding-top: 20px;
   font-size: 25px;
+  margin-bottom: 1.5rem;
 }
 
 #uname,
 #pass
-{
-  width: 50%;
-  height: 4vh;
+{  
+  display: flex;
+  width: 80%;
+  padding: 10px;
   border-radius: 5px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  text-align: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: none;
 }
 
-.container
+.footer .container
 {
   margin: 0 auto;
-  max-width: 940px;
-  padding: 0 10px;
-}
-
-.adminlogin
-{
-  background: url(../public/admin_bg.jpg) center center;
-  background-size: cover;
-  height: 800px;
-  text-align: center;
-  color: white;
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%;
 }
 
 @keyframes drop
@@ -76,53 +93,18 @@ legend
   }
 }
 
-.nav
-{
-  background: #000;
-  height: 50px;
-  width: 100%;
-}
-
-.nav ul
-{
-  height: 80px;
-  list-style: none;
-  margin: 0 -250px 0 0;
-  padding: 0;
-}
-
-.nav ul li a
-{
-  float: right;
-  color: #fff;
-  height: 50px;
-  line-height: 50px;
-  list-style: none;
-  padding: 0 20px;
-  transition: background 1s;
-  text-decoration: none;
-}
-
-.nav ul li a:hover
-{
-  color: black;
-  background: lightblue;
-  cursor: pointer;
-  transition: all .2s;
-}
-
 #submit
 {
-  height: max-content;
+  width: 80%;
   font-family: 'Poppins', sans-serif;
   display: inline-block;
-  width: max-content;
-  margin-top: 5%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 0.7em;
   font-size: 1.1rem;
   border: none;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
   color: white;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -131,33 +113,23 @@ legend
 
 #submit:hover
 {
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   color: black;
-  transform: scale(1.05);
-}
-
-.nav ul li a:hover
-{
-  color: black;
-  background: lightblue;
-  cursor: pointer;
-  transition: background .5s;
+  transform: scale(1.01);
 }
 
 .footer
 {
   background: #000;
-  height: 80px;
-  padding-bottom: 50px;
+  padding: 1.5rem 0;
 }
 
 .footer p
 {
   color: #fff;
   font-size: 14px;
-  height: 80px;
-  line-height: 80px;
   margin: 0;
+  text-align: center;
 }
 
 ::-webkit-scrollbar
@@ -166,13 +138,24 @@ legend
   height: 0.5em;
 }
 
-::-webkit-scrollbar-track
-{
-  background-color: #000058;
+::-webkit-scrollbar-track {
+  background-color: #000000;
 }
 
-::-webkit-scrollbar-thumb
-{
-  background-color: #000000;
+::-webkit-scrollbar-thumb {
+  background-color: #3a3a3a;
   border-radius: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  form {
+    width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  legend {
+    font-size: 22px;
+  }
 }

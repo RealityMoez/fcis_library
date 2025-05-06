@@ -3,6 +3,7 @@ body
 {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body
@@ -14,7 +15,7 @@ body
 .container
 {
   margin: 0 auto;
-  max-width: 940px;
+  justify-items: center;
   padding: 0 10px;
 }
 
@@ -93,8 +94,6 @@ body
   animation: drop 1.5s ease
 }
 
-/* Old navigation styles removed */
-
 .header .container .btn
 {
   border: 1px solid #fff;
@@ -137,14 +136,18 @@ body
 
 .main .container
 {
-  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin: 50px 5%;
 }
 
 .footer
 {
   background: #000;
   height: 80px;
-  padding-bottom: 50px;
 }
 
 .footer p
@@ -159,17 +162,15 @@ body
 
 ::-webkit-scrollbar
 {
-  width: 0.6em;
+  width: 0.4em;
   height: 0.5em;
 }
 
-::-webkit-scrollbar-track
-{
-  background-color: #000058;
+::-webkit-scrollbar-track {
+  background-color: #000000;
 }
 
-::-webkit-scrollbar-thumb
-{
-  background-color: #000000;
+::-webkit-scrollbar-thumb {
+  background-color: #3a3a3a;
   border-radius: 15px;
 }

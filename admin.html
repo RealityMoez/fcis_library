@@ -6,7 +6,7 @@
   <link rel="icon" href="public/library-icon.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link href="/styles/admin.css" type="text/css" rel="stylesheet">
+  <link href="styles/admin.css" type="text/css" rel="stylesheet">
   <link href="styles/header.css" rel="stylesheet">
   <script type="text/javascript" src="admin_panel.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,20 +37,14 @@
 
   <div class="adminlogin">
     <form onsubmit="return validate();" action="admin_panel.html">
-      <div>
-        <legend>Administrator Login</legend><br><br>
-
-
-        <input type="text" id="uname" placeholder="username"><br>
-
-        <input type="password" id="pass" placeholder="password"><br>
-
+      <div class="admin-form-container">
+        <legend>Administrator Login</legend>
+        <input type="text" id="uname" placeholder="Username">
+        <input type="password" id="pass" placeholder="Password">
         <button type="submit" id="submit">Login</button>
       </div>
     </form>
-
   </div>
-
 
   <div class="footer">
     <div class="container">

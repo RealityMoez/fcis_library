@@ -1,14 +1,13 @@
 /* Mobile-responsive header styles */
 .header-nav {
   background: #000;
-  width: 100%;
+
   position: relative;
   z-index: 1000;
 }
 
 .header-container {
   margin: 0 auto;
-  max-width: 1200px;
   padding: 0 15px;
   display: flex;
   justify-content: space-between;

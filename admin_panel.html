@@ -3,12 +3,12 @@
 
 <head>
   <title>FCIS Library</title>
-  <link rel="icon" href="library-icon.jpg">
+  <link rel="icon" href="public/library-icon.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link href="/styles/admin_panel.css" type="text/css" rel="stylesheet">
+  <link href="styles/admin_panel.css" type="text/css" rel="stylesheet">
   <link href="styles/header.css" rel="stylesheet">
-  <script type="text/javascript" src="/scripts/admin_panel.js"></script>
+  <script type="text/javascript" src="scripts/admin_panel.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -38,30 +38,35 @@
 
   <div class="adminsetting" id="adminsetting">
     <p>
-      <br>(<strong>NOTE</strong>)<br>
-      These Settings are Applied to This Page Only.
+      <strong>NOTE</strong>: These Settings are Applied to This Page Only.
     </p>
-    <legend>Background Color</legend><br>
-    <input type="button" class="button" value="Red" onclick="changebg1()">
-    <input type="button" class="button" value="Green" onclick="changebg2()">
-    <input type="button" class="button" value="Gray" onclick="changebg3()">
-    <input type="button" class="button" value="Blue" onclick="changebg4()">
-    <br><input type="button" class="button" value="Default" onclick="changebg5()"><br>
+    
+    <div class="settings-section">
+      <legend>Background Color</legend>
+      <input type="button" class="button" value="Red" onclick="changebg1()">
+      <input type="button" class="button" value="Green" onclick="changebg2()">
+      <input type="button" class="button" value="Gray" onclick="changebg3()">
+      <input type="button" class="button" value="Blue" onclick="changebg4()">
+      <input type="button" class="button" value="Default" onclick="changebg5()">
+    </div>
 
-    <legend>Font</legend><br>
-    <input type="button" class="button" value="Arial" onclick="font1()">
-    <input type="button" class="button" value="Ranchers" onclick="font2()">
-    <input type="button" class="button" value="Cursive" onclick="font3()">
-    <br><input type="button" class="button" value="Default" onclick="font4()"><br>
+    <div class="settings-section">
+      <legend>Font</legend>
+      <input type="button" class="button" value="Arial" onclick="font1()">
+      <input type="button" class="button" value="Ranchers" onclick="font2()">
+      <input type="button" class="button" value="Cursive" onclick="font3()">
+      <input type="button" class="button" value="Default" onclick="font4()">
+    </div>
 
-    <legend>Font Color</legend><br>
-    <input type="button" class="button" value="Green" onclick="fontC1()">
-    <input type="button" class="button" value="Blue" onclick="fontC2()">
-    <input type="button" class="button" value="Yellow" onclick="fontC3()">
-    <br><input type="button" class="button" value="Default" onclick="fontC4()"><br>
+    <div class="settings-section">
+      <legend>Font Color</legend>
+      <input type="button" class="button" value="Green" onclick="fontC1()">
+      <input type="button" class="button" value="Blue" onclick="fontC2()">
+      <input type="button" class="button" value="Yellow" onclick="fontC3()">
+      <input type="button" class="button" value="Default" onclick="fontC4()">
+    </div>
 
-      <a class="logout-btn" href="admin.html" aria-label="Logout admin">Logout</a>
-
+    <a class="logout-btn" href="admin.html" aria-label="Logout admin">Logout</a>
   </div>
 
   <div class="footer">
